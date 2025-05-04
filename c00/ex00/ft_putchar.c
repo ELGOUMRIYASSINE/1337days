@@ -6,7 +6,7 @@
 /*   By: yassine.elgoumri <elgoumriyassine6@studen  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 22:58:13 by yassine.elgou     #+#    #+#             */
-/*   Updated: 2025/05/03 22:58:47 by yassine.elgou    ###   ########.fr       */
+/*   Updated: 2025/05/04 13:56:00 by yassine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void ft_putchar(char c){
 	        write(1,&c,1);
 }
 
-int main () {
+/* int main () {
 	        ft_putchar('2');
 		        return 0 ;
-}
+} */
