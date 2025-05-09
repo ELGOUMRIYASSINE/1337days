@@ -21,20 +21,12 @@ void ft_print_comb2(void) {
 		       char i2 = i % 10 + '0' ;
 		       char j1 = j / 10 + '0' ;
 		       char j2 = j % 10 + '0' ;
-		       char comb[5] = {i1,i2,' ',j1,j2};
-		       write(1,comb,5);
-		       if( i != 98  ){
-			       write(1," ,",2);
-		       }
+		       char comb[7] = {i1,i2,' ',j1,j2,',',' '};
+		       int len = ( i != 98  ) ? 7 : 5 ;
+		       write(1,comb,len);
 		j++;
 	       }
 	i++;
        }	
 
-}
-
-/* int main(){
-	ft_print_comb2();
-	return 0;
-
-} */
+} 
