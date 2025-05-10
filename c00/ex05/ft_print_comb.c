@@ -19,11 +19,9 @@ void  ft_print_comb(void){
 			while( j <= '8' ){
 				char k = j+1;
 				while( k <= '9' ){
-					char comb[3] = {i,j,k};
-					write(1,comb,3);
-					if ( i != '7' ) {
-						write(1,",",1);
-					}
+					char comb[4] = {i,j,k,','};
+					int len = ( i!= '7' ) ? 4 : 3;
+					write(1,comb,len);
 					k++;
 				}
 			j++;
@@ -31,3 +29,9 @@ void  ft_print_comb(void){
 		i++;
 	    }
 	}
+
+int main(){
+	ft_print_comb();
+	return 0;
+
+}
